@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="icon" href="img/icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Montana India Resort
+    </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f5600fde03.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Baloo Chettan 2', cursive;
+            font-size: 20px;
+            color: whitesmoke;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg4.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        /* Desiging the left */
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            width: 33%;
+            position: absolute;
+            top: 50px;
+            left: 110px;
+        }
+
+        /* Desigining the navbar */
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        .navbar a {
+            font-family: 'Baloo Chettan 2', cursive;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            padding: 20px 20px;
+        }
+
+        .navbar a:hover {
+            padding-bottom: 10px;
+            border-bottom: 2px solid whitesmoke;
+            border-radius: 3px;
+        }
+
+        /* Desiging the mid */
+        .mid {
+            /* border: 2px solid rgb(255, 196, 0); */
+            display: block;
+            width: 10%;
+            /* margin: top right buttom left; */
+            margin: 40px auto 50px 1000px;
+        }
+
+        .mid img {
+            width: 55%;
+        }
+
+        /* Desiging the right */
+        .right {
+            /* border: 2px solid rgb(0, 68, 255); */
+            display: inline-block;
+            position: absolute;
+            top: 50px;
+            right: 110px;
+            margin:5px;
+        }
+
+        .btn {
+            font-family: 'Baloo Chettan 2', cursive;
+            background: #009dff;
+            padding: 12px 26px;
+            font-size: 16px;
+            font-weight: 400;
+            border: 1px solid transparent;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 20px;
+            border-radius: 2px;
+        }
+        .btn:hover{
+            background:rgb(215, 231, 235);
+            color: #009dff;
+        }
+        .fab{
+            margin:15px;
+            color:gray;
+        }
+        .fab:hover{
+            cursor:pointer;
+            color:white;
+        }
+        .social-icons{
+            display: inline-block;
+        }
+        /* Desiging the content */
+        .content{
+            /* border:2px solid black; */
+            display: block;
+            width:40%;
+            margin:auto;
+            padding:15px; 
+            margin-top: 190px;
+            
+        }
+        .content h1{
+            font-family: 'Ubuntu', sans-serif;
+            font-size:95px;
+            text-align: center;
+            margin-bottom: 0px;
+            line-height:0px;
+        }
+        .content p{
+            font-family: 'Ubuntu', sans-serif;
+            text-align: center;
+            margin-top:60px;
+        }
+        #read-more-btn{
+            font-family: 'Baloo Chettan 2', cursive;
+
+            background:#009dff4b;;
+            border:1px solid white;
+            border-radius: 2px;
+            display: block;
+            margin:auto;
+            margin-top: 8px;
+        }
+        #read-more-btn:hover{
+            border:none;
+            background: #009dff;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="mid">
+            <a href="#">
+                <img src="data:image/webp;base64,UklGRoICAABXRUJQVlA4THUCAAAvb8AWEI8w//M//0obSYGzuLvjVTj6IWB/HBaEMCgkAoJDIASAAGjbtlU1tia4EQkuYPz/57pQk5TnWg8R/Z8AfeafT9XP+Uef+VsE1DOGPQFhtvAIg21WxyPY6JNAfYbC6hXSM0TM603PoEo8ZPJTJOqhDT2F2ghSojxHJkuV+BwaXZGqBymkQnqSSO1NT6IK+VkSQ8+iVh7jnb+qfOoP8tsjkM8F4Mezc+UJSKfG+Jjw6t/SqGcy7WMSfMsG8USn/nypU2aJnh4gM2Y75UzeB/QaPaNoNejlYPhFUtgMsNVJoFA77IsXNgNsPaNB9iKEWTCmeVZx7Urs+GWyDNx0iB2/nCk0r1I1a4wcpLjD6rWxSaFClqQEchN7kkKF6DWLUhr0Q2JPUqgQT0RIhzBYZpmxyN3pHquOnf1KltvZJjpmWA5Zbmc7oUo9FEyzxkt+hOQ0uYV+YW4Ub3UEWWeNcmaBKKmznoA0UaM4xUtwKaylWmcm3yhOWEu1zjkZRcp0zRJobu8KleMYN4XKcYwLmSEZ23cY47Uukt1kjNe6SHZBnbwwwokAadbY3rJC1PGmFaKOlwpWqTqhTplEWN5SMLn9noLJ7VfCYBBPFcbi7ZjuCl5zNu5qzsYVVdh1KjRGDlLcGcs9AV6HBK+gsDHuSfAKChvjUoR0TqHhj0X3aAcoUsV92T2quC+7JOu6IGUDWgm6K9TByJJKg7bqLpUGbdXsV/kKxGdJSvXD+vfl4mXIXoXodcieVZwO8bugyo0mda9rWrPEpMjv+u6a1L0EEJ1E8UxSjV78OXJxoulsSU7NEvpx1PNBBcyDLr9DumTEr/onFgA="
+                    alt="Mortana India Resort">
+            </a>
+        </div>
+        <div class="right">
+            <div class="social-icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                
+            </div>
+            <button class="btn">
+                Book A Room
+            </button>
+            
+        </div>
+    </header>
+    <div class="content">
+        <h1>Montana Resort</h1>
+        <p>Unlock to enjoy the view of Martine</p>
+    </div>
+        <button class="btn" id="read-more-btn">Read More</button>
+</body>
+</html>
